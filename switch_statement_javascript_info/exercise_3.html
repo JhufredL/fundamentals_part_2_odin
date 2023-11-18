@@ -9,8 +9,16 @@
     <script>
         "use strict";
         
-        if (1 && 0) { // evaluated as true && false
-          alert( "won't work, because the result is falsy" );
+        let a = "1";
+        let b = 0;
+        
+        switch (+a) {
+          case b + 1:
+            alert("this runs, because +a is 1, exactly equals b+1");
+            break;
+        
+          default:
+            alert("this doesn't run");
         }
         </script>
 </body>

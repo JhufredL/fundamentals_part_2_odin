@@ -9,11 +9,17 @@
     <script>
         "use strict";
         
-        let hour = 12;
-        let isWeekend = true;
+        let a = 2 + 2;
         
-        if (hour < 10 || hour > 18 || isWeekend) {
-          alert( 'The office is closed.' ); // it is the weekend
+        switch (a) {
+          case 3:
+            alert( 'Too small' );
+          case 4:
+            alert( 'Exactly!' );
+          case 5:
+            alert( 'Too big' );
+          default:
+            alert( "I don't know such values" );
         }
         </script>
 </body>

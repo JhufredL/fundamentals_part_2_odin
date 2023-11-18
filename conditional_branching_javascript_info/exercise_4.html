@@ -9,9 +9,16 @@
     <script>
         "use strict";
         
-        if (1 && 0) { // evaluated as true && false
-          alert( "won't work, because the result is falsy" );
+        let accessAllowed;
+        let age = prompt('How old are you?', '');
+        
+        if (age > 18) {
+          accessAllowed = true;
+        } else {
+          accessAllowed = false;
         }
+        
+        alert(accessAllowed);
         </script>
 </body>
 </html>

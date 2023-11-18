@@ -9,12 +9,22 @@
     <script>
         "use strict";
         
-        alert( 1 || 0 ); // 1 (1 is truthy)
+        let a = +prompt('a?', '');
         
-        alert( null || 1 ); // 1 (1 is the first truthy value)
-        alert( null || 0 || 1 ); // 1 (the first truthy value)
+        switch (a) {
+          case 0:
+            alert( 0 );
+            break;
         
-        alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+          case 1:
+            alert( 1 );
+            break;
+        
+          case 2:
+          case 3:
+            alert( '2,3' );
+            break;
+        }
         </script>
 </body>
 </html>

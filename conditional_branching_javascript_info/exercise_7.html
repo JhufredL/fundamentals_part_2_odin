@@ -9,8 +9,12 @@
     <script>
         "use strict";
         
-        if (1 && 0) { // evaluated as true && false
-          alert( "won't work, because the result is falsy" );
+        let company = prompt('Which company created JavaScript?', '');
+        
+        if (company == 'Netscape') {
+          alert('Right!');
+        } else {
+          alert('Wrong.');
         }
         </script>
 </body>
